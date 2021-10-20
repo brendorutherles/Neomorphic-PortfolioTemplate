@@ -1,8 +1,9 @@
  {
   "schemaVersion": 2,
   "dockerfileLines": [
-                        "FROM nginx:latest",
-                        "COPY index.html /var/www/html/",
+
+                        "FROM apache:latest",
+                        "COPY . /var/www/html",
                         "ENV PORT 80",
                         "EXPOSE 80"
 
